@@ -3,6 +3,7 @@ import Hero from '../components/Hero.astro'
 import Tittle from '../components/Tittle.astro'
 import Project from '../components/Project.astro'
 import Layout from '../layouts/Layout.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Welcome to Jhon Smith">
@@ -75,7 +76,27 @@ import Layout from '../layouts/Layout.astro'
 					<hr class="uk-divider-icon" />
 				</div>
 			</section>
+
+			<section class="uk-container uk-container-xsmall mt-10">
+				<div class="mb-6">
+					<Tittle title="Newsletter" />
+				</div>
+				<div class="space-y-4">
+					<p class="uk-paragraph font-mono">
+						Sign up below to receive monthly updates from me straight in your inbox.
+					</p>
+
+					<form class="flex gap-4">
+						<input type="email" name="email" placeholder="Your email address" class="uk-input" />
+						<input type="submit" value="Subscribe" class="uk-button uk-button-primary" />
+					</form>
+				</div>
+			</section>
 		</main>
-		<footer>footer</footer>
+		<footer>
+			<section class="uk-container uk-container-xsmall mt-10">
+				<Footer />
+			</section>
+		</footer>
 	</div>
 </Layout>

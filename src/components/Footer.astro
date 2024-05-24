@@ -1,0 +1,23 @@
+---
+const currentPage = Astro.url.pathname
+---
+
+<div class="grid items-center justify-between">
+	<p>2024 - John Smith</p>
+	<nav class="uk-navbar-container" uk-navbar>
+		<div class="uk-navbar-left">
+			<ul class="uk-navbar-nav">
+				<li class={currentPage === '/' ? 'uk-active' : ''}><a href="/">Home</a></li>
+				<li class={currentPage === '/projects' ? 'uk-active' : ''}>
+					<a href="/projects">Projects</a>
+				</li>
+				<li class={currentPage === '/thoughts' ? 'uk-active' : ''}>
+					<a href="/thoughts">Thoughts</a>
+				</li>
+				<li class={currentPage === '/contact' ? 'uk-active' : ''}>
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
