@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Footer from '../components/Footer.astro'
+import HeaderImage from '../components/HeaderImage.astro'
+import Tittle from '../components/Title.astro'
+import Project from '../components/Project.astro'
+---
+
+<Layout title="404 not found">
+	<div class="grid h-svh grid-rows-[auto_1fr_auto] gap-4">
+		<header>
+			<nav class="uk-container uk-container-xsmall mt-10">
+				<HeaderImage name="John Smith" />
+			</nav>
+		</header>
+		<main>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<Tittle title="404 not found" />
+				<p class="text-center">The page you are looking for does not exist.</p>
+
+				<a class="uk-button uk-button-primary mt-6" href="/">Go Home</a>
+			</div>
+		</main>
+		<footer>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<Footer />
+			</div>
+		</footer>
+	</div>
+</Layout>
