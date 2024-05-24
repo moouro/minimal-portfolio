@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string
+	content: string
+	year: string
+	link: string
+}
+
+const { title, content, year, link } = Astro.props
+---
+
+<a href={link} class="rounded-md bg-zinc-100 p-4 transition-all hover:translate-y-2">
+	<div class="flex items-baseline justify-between">
+		<h3 class="uk-h3">{title}</h3>
+		<span class="rounded-md bg-white p-1 font-mono text-xs">{year}</span>
+	</div>
+	<p class="uk-margin font-mono">{content}</p>
+	<p class="flex items-center gap-2">
+		View details <span uk-icon="arrow-right" aria-label="View details"></span>
+	</p>
+</a>
