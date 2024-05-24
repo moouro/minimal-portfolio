@@ -1,0 +1,29 @@
+---
+import Image from 'astro/components/Image.astro'
+import profile from '../assets/avatar.png'
+---
+
+<nav class="mt-10">
+	<div class="uk-container uk-container-xsmall">
+		<Image src={profile} alt=" Hey, I’m John Smith." width={150} class="mb-8 rounded-full" />
+
+		<div>
+			<h1 class="uk-h1">
+				Hey, I’m John Smith. I'm a front-end developer & designer based in London, UK.
+			</h1>
+
+			<p class="uk-paragraph mb-8 font-mono">
+				Right now, I’ve just launched this minimal portfolio template you're viewing (get it here).
+				I'm also working on my own projects, sharing my thoughts on my blog and I document my whole
+				journey on Twitter.
+			</p>
+		</div>
+
+		<a
+			href="/"
+			uk-icon="arrow-right"
+			class="uk-link-text flex items-center gap-1"
+			aria-label="Get in touch">Get in Touch</a
+		>
+	</div>
+</nav>
