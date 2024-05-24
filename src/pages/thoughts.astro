@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Footer from '../components/Footer.astro'
+import HeaderImage from '../components/HeaderImage.astro'
+import Tittle from '../components/Title.astro'
+import Newsletter from '../components/Newsletter.astro'
+import CThoughts from '../components/CThoughts.astro'
+---
+
+<Layout title="Thoughts">
+	<div class="grid h-svh grid-rows-[auto_1fr_auto] gap-4">
+		<header>
+			<nav class="uk-container uk-container-xsmall mt-10">
+				<HeaderImage name="John Smith" />
+			</nav>
+		</header>
+		<main>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<section>
+					<Tittle title="Thoughts" />
+					<CThoughts />
+				</section>
+
+				<section class="mt-20">
+					<Tittle title="Newsletter" />
+
+					<Newsletter />
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<Footer />
+			</div>
+		</footer>
+	</div>
+</Layout>

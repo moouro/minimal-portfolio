@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Footer from '../components/Footer.astro'
+import HeaderImage from '../components/HeaderImage.astro'
+import Tittle from '../components/Title.astro'
+---
+
+<Layout title="Contact">
+	<div class="grid h-svh grid-rows-[auto_1fr_auto] gap-4">
+		<header>
+			<nav class="uk-container uk-container-xsmall mt-10">
+				<HeaderImage name="John Smith" />
+			</nav>
+		</header>
+		<main>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<section>
+					<Tittle title="Contact" />
+
+					<div>
+						<p>Get in touch:</p>
+
+						<div>
+							<a href="#" class="flex items-center gap-2">
+								Twitter
+								<span>@julesvcode</span>
+								<span uk-icon="arrow-right"></span>
+							</a>
+
+							<a href="#" class="flex items-center gap-2">
+								Instagram
+								<span>@julesvdesign</span>
+								<span uk-icon="arrow-right"></span>
+							</a>
+
+							<a href="#" class="flex items-center gap-2">
+								Github
+								<span>@julesvcode</span>
+								<span uk-icon="arrow-right"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="uk-container uk-container-xsmall mt-10">
+				<Footer />
+			</div>
+		</footer>
+	</div>
+</Layout>
