@@ -1,54 +1,22 @@
-# Astro Starter Kit: Basics
+## 📖 Descrição do Projeto
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bem-vindo ao portfólio minimalista! Este portfólio foi desenvolvido utilizando [Astro](https://astro.build), um moderno construtor de sites estáticos. Também utilizo o framework CSS utilitário [TailwindCSS](https://tailwindcss.com) para estilização e [Franken-UI](https://www.franken-ui.dev/) para componentes de interface adicionais, tornando-o uma maneira elegante e eficiente de exibir seu trabalho.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este projeto foi projetado para ser leve e rápido, proporcionando uma apresentação limpa e profissional para o portfólio de qualquer desenvolvedor ou designer. Com a arquitetura baseada em componentes poderosa do Astro, o sistema de design altamente personalizável do TailwindCSS e os componentes flexíveis do Franken-UI, você pode facilmente estender e personalizar seu portfólio para atender às suas necessidades.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📸 Captura de Tela do Projeto
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+![just-the-basics](https://github.com/moouro/minimal-portfolio/blob/main/src/assets/screencapture1.png?raw=true)
 
-## 🚀 Project Structure
+## 🧞 Comandos
 
-Inside of your Astro project, you'll see the following folders and files:
+Todos os comandos são executados a partir da raiz do projeto, a partir de um terminal:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando                    | Ação                                              |
+| :------------------------- | :------------------------------------------------ |
+| `pnpm install`             | Instala as dependências                           |
+| `pnpm run dev`             | Inicia o servidor de desenvolvimento local em `localhost:4321` |
+| `pnpm run build`           | Compila o site para produção na pasta `./dist/`   |
+| `pnpm run preview`         | Faz a pré-visualização da sua compilação localmente, antes de implantar |
+| `pnpm run astro ...`       | Executa comandos CLI como `astro add`, `astro check` |
+| `pnpm run astro -- --help` | Obtém ajuda sobre como usar o Astro CLI           |
