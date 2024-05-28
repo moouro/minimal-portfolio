@@ -2,7 +2,7 @@
 
 Bem-vindo ao portfólio minimalista! Este portfólio foi desenvolvido utilizando [Astro](https://astro.build), um moderno construtor de sites estáticos. Também utilizo o framework CSS utilitário [TailwindCSS](https://tailwindcss.com) para estilização e [Franken-UI](https://www.franken-ui.dev/) para componentes de interface adicionais, tornando-o uma maneira elegante e eficiente de exibir seu trabalho.
 
-Este projeto foi projetado para ser leve e rápido, proporcionando uma apresentação limpa e profissional para o portfólio de qualquer desenvolvedor ou designer. Com a arquitetura baseada em componentes poderosa do Astro, o sistema de design altamente personalizável do TailwindCSS e os componentes flexíveis do Franken-UI, você pode facilmente estender e personalizar seu portfólio para atender às suas necessidades.
+Este projeto foi desenvolvido para ser leve e rápido, proporcionando uma apresentação limpa e profissional para o portfólio de qualquer desenvolvedor ou designer. Com a arquitetura baseada em componentes poderosa do Astro, o sistema de design altamente personalizável do TailwindCSS e os componentes flexíveis do Franken-UI, você pode facilmente estender e personalizar seu portfólio para atender às suas necessidades.
 
 ## 📸 Captura de Tela do Projeto
 
