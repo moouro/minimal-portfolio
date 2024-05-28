@@ -8,9 +8,15 @@ const { name } = Astro.props
 ---
 
 <div class="flex items-center gap-4">
-	<a href="/">
-		<Image src={profile} alt=" Hey, I’m John Smith." width={150} class="mb-8 rounded-full" />
+	<a href="/" aria-label=" Home">
+		<Image
+			src={profile}
+			alt=" Hey, I’m John Smith."
+			width={150}
+			class="mb-8 rounded-full"
+			loading="eager"
+		/>
 	</a>
 
-	<h1 class="uk-h1">{name}</h1>
+	<h1 class="uk-h1">{name} <title>name</title></h1>
 </div>

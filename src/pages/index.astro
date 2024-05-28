@@ -6,9 +6,12 @@ import Layout from '../layouts/Layout.astro'
 import Footer from '../components/Footer.astro'
 import Newsletter from '../components/Newsletter.astro'
 import CThoughts from '../components/CThoughts.astro'
+import { ViewTransitions } from 'astro:transitions'
 ---
 
 <Layout title="Welcome to Jhon Smith">
+	<ViewTransitions />
+
 	<div class="grid h-svh grid-rows-[auto_1fr_auto] gap-4">
 		<header>
 			<Hero />
@@ -26,21 +29,21 @@ import CThoughts from '../components/CThoughts.astro'
 						title="minilio"
 						content="A minimal portfolio template built on Framer"
 						year="2024"
-						link="#"
+						link="/projects"
 					/>
 
 					<Project
 						title="Staredown"
 						content="An online game to test you colour vision"
 						year="2024"
-						link="#"
+						link="/projects"
 					/>
 
 					<Project
 						title="88pixel"
 						content="A collection of cross-platform website templates."
 						year="2024"
-						link="#"
+						link="/projects"
 					/>
 				</div>
 			</section>

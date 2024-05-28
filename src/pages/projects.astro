@@ -4,9 +4,11 @@ import Footer from '../components/Footer.astro'
 import HeaderImage from '../components/HeaderImage.astro'
 import Tittle from '../components/Title.astro'
 import Project from '../components/Project.astro'
+import { ViewTransitions } from 'astro:transitions'
 ---
 
 <Layout title="Projects">
+	<ViewTransitions />
 	<div class="grid h-svh grid-rows-[auto_1fr_auto] gap-4">
 		<header>
 			<nav class="uk-container uk-container-xsmall mt-10">
@@ -23,35 +25,35 @@ import Project from '../components/Project.astro'
 							title="minilio"
 							content="A minimal portfolio template built on Framer"
 							year="2024"
-							link="#"
+							link="/projects"
 						/>
 
 						<Project
 							title="Staredown"
 							content="An online game to test you colour vision"
 							year="2024"
-							link="#"
+							link="/projects"
 						/>
 
 						<Project
 							title="88pixel"
 							content="A collection of cross-platform website templates."
 							year="2024"
-							link="#"
+							link="/projects"
 						/>
 
 						<Project
 							title="moody"
 							content="A minimal web app to track your mood"
 							year="2024"
-							link="#"
+							link="/projects"
 						/>
 
 						<Project
 							title="What To Listen To"
 							content="Discover new lofi tracks to listen to while working, coding, studying or relaxing"
 							year="2024"
-							link="#"
+							link="/projects"
 						/>
 					</div>
 				</section>
