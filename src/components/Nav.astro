@@ -1,9 +1,9 @@
 ---
 const navLinks = [
 	{ name: 'Home', href: '/' },
-	{ name: 'Projects', href: '/projects' },
-	{ name: 'Thoughts', href: '/thoughts' },
-	{ name: 'Contact', href: '/contact' }
+	{ name: 'Projects', href: 'projects' },
+	{ name: 'Thoughts', href: 'thoughts' },
+	{ name: 'Contact', href: 'contact' }
 ]
 ---
 
@@ -11,7 +11,7 @@ const navLinks = [
 	{
 		navLinks.map((i) => (
 			<li>
-				<a data-navlink href={i.href} class="aria-current:underline">
+				<a data-navlink href={i.href} class="uk-button aria-current:uk-button-primary">
 					{i.name}
 				</a>
 			</li>
