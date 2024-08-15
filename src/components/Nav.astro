@@ -1,0 +1,30 @@
+---
+const navLinks = [
+	{ name: 'Home', href: '/' },
+	{ name: 'Projects', href: 'projects' },
+	{ name: 'Thoughts', href: 'thoughts' },
+	{ name: 'Contact', href: 'contact' }
+]
+---
+
+<ul class="flex gap-4">
+	{
+		navLinks.map((i) => (
+			<li>
+				<a data-navlink href={i.href} class="aria-current:underline">
+					{i.name}
+				</a>
+			</li>
+		))
+	}
+</ul>
+
+<script>
+	const navLinks = document.querySelectorAll('[data-navlink]') as NodeListOf<HTMLAnchorElement>
+
+	navLinks.forEach((link) => {
+		if (window.location.href === link.href) {
+			link.setAttribute('aria-current', 'page')
+		}
+	})
+</script>

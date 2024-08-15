@@ -1,29 +1,17 @@
 ---
-const currentPage = Astro.url.pathname
+import Nav from './Nav.astro'
 ---
 
 <div class="grid grid-cols-1 items-center">
 	<div class="flex flex-wrap justify-between gap-4">
 		<p>2024 - John Smith</p>
 		<nav class="uk-navbar-container" uk-navbar>
-			<div class="uk-navbar-left">
-				<ul class="uk-navbar-nav">
-					<li class={currentPage === '/' ? 'uk-active' : ''}><a href="/">Home</a></li>
-					<li class={currentPage === '/projects' ? 'uk-active' : ''}>
-						<a href="/projects">Projects</a>
-					</li>
-					<li class={currentPage === '/thoughts' ? 'uk-active' : ''}>
-						<a href="/thoughts">Thoughts</a>
-					</li>
-					<li class={currentPage === '/contact' ? 'uk-active' : ''}>
-						<a href="/contact">Contact</a>
-					</li>
-				</ul>
-			</div>
+			<Nav />
+			<hr class="uk-divider-icon" />
 		</nav>
 	</div>
 	<hr class="uk-divider-icon" />
-	<p class="pb-4 text-center">
-		Desenvolvido por <a href="https://mouro.dev" class="text-indigo-600">mouro</a>
+	<p class="mb-7 mt-8 pb-4 text-center">
+		Desenvolvido por <a href="https://mouro.dev" target="_blank" class="text-indigo-600">mouro</a>
 	</p>
 </div>
