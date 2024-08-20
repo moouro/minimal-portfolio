@@ -11,14 +11,13 @@ const navLinks = [
 	{
 		navLinks.map((i) => (
 			<li>
-				<a data-navlink href={i.href} class="aria-current:uk-button aria-current:uk-button-primary">
+				<a data-navlink href={i.href} class="aria-current:uk-active aria-current:underline">
 					{i.name}
 				</a>
 			</li>
 		))
 	}
 </ul>
-
 <script>
 	const navLinks = document.querySelectorAll('[data-navlink]') as NodeListOf<HTMLAnchorElement>
 
