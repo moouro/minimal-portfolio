@@ -4,11 +4,15 @@ interface Props {
 }
 
 const { title } = Astro.props
+import { ViewTransitions } from 'astro:transitions'
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
+		<ViewTransitions />
+		<meta name="author" content="John Smith" />
+
 		<meta charset="UTF-8" />
 
 		<meta
